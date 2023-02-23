@@ -48,8 +48,8 @@ def main():
 			raise ValueError("Input lists cannot be empty.")
 		if len(x) != len(y):
 			raise ValueError("The length of x and y must be the same.")
-	except ValueError as e:
-		print(f"Error: {e}")
+	except ValueError as x:
+		print(f"Error: {x}")
 	
 	
 	model = LinearRegression()#initialize instance

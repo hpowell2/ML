@@ -1,0 +1,41 @@
+#my second machine learning algo
+#the goal of logistic regression is to find the relationship between:
+#                           - independant variables, and
+#                           - dependant variable (must be binary)
+#the sigmoid function is defined as:
+#S(x) = 1 / (1 + exp(-x))
+#to use this, we calculate the linear combination of the input features and their corresponding weights
+#then apply the result to S
+#the linear combination is found by 
+#z = w_0(bias term) + w_1*x_1 + w_2*x_2 + w_n*x_n
+#
+#an example -   age, bmi -> bool(diabetic)
+#
+#
+# Initialize the weights for the bias term and input values to random values.
+# Define the sigmoid function
+# Define a loss function that measures the difference between the predicted probabilities and the actual labels. A common loss function for logistic regression is binary cross-entropy.
+# Define the optimization algorithm: Define an optimization algorithm, such as gradient descent, to adjust the weights to minimize the loss function.
+# Predict new values: Once the model is trained, use it to make predictions on new data by applying the sigmoid function to the linear combination of the input features and weights and using a threshold to make binary predictions.
+import math
+import numpy as np
+
+
+age = np.array([23, 45, 67, 33, 55, 22, 31, 48, 57, 39])
+bmi = np.array([20.5, 24.1, 27.8, 31.2, 28.6, 23.4, 25.1, 29.8, 32.4, 26.9])
+diabetic = np.array([0, 1, 1, 0, 1, 0, 0, 1, 1, 0])
+
+class LogisticRegression:
+    def __init__(self):
+        self.w_0 = 0
+        self.w_0 = 0
+        self.w_0 = 0 
+    def sig(self,z):             #sigmoid function
+        return 1 / (1 + math.exp(-z))
+    def cost(self,x,y,w):
+        pass
+    def optimization(self):
+        pass
+    def predict(self, x1,x2):
+        pass
+        
